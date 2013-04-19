@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/widget" android:layout_width="wrap_content" android:layout_height="98.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="100.0dip" android:layout_height="fill_parent">
+        <ImageView android:id="@id/button_up" android:background="@drawable/recommend_button_up" android:paddingLeft="8.0dip" android:paddingTop="15.0dip" android:paddingRight="8.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0" />
+        <ImageView android:id="@id/button_down" android:background="@drawable/recommend_button_down" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0" />
+        <ImageView android:id="@id/button_down_installed" android:background="@drawable/recommend_button_downloaded" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0" />
+        <ImageView android:id="@id/button_down_update" android:background="@drawable/recommend_button_update" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0" />
+        <ImageView android:id="@id/button_down_install" android:background="@drawable/recommend_button_install" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/daily_recommend_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0dip" android:textColor="@drawable/black" android:gravity="left" android:id="@id/app_title" android:paddingTop="6.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff59a3dc" android:gravity="right" android:id="@id/recommend_title" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:layout_width="80.0dip" android:layout_height="fill_parent" android:text="@string/daily_recommend" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="14.0dip" android:textColor="@drawable/light_black" android:id="@id/app_description" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="3" />
+    </LinearLayout>
+</LinearLayout>

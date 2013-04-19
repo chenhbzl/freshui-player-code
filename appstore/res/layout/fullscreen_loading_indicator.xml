@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/fullscreen_loading_indicator" android:background="@drawable/list_view_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading_big1" />
+        <FrameLayout android:layoutAnimation="@anim/layout_anim_cont" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading_big3" />
+        </FrameLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading_big2" />
+    </FrameLayout>
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@drawable/black" android:id="@id/current_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/loading" />
+</LinearLayout>

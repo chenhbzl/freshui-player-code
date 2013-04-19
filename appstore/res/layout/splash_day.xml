@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/splash_bg_day" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/splash_logo" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/splash_logo_day" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+    <RatingBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="80.0dip" android:numStars="5" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/IWProgressBarCube" />
+</RelativeLayout>

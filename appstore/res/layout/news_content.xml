@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/news_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="52.0dip" layout="@layout/news_content_header" />
+    <ScrollView android:id="@id/news_content_scroll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/news_content" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ScrollView>
+    <include android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/fullscreen_loading_indicator" />
+    <include android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/low_speed_indicator" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/navigation_buttons_bar" android:background="@drawable/list_header_bar2" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="8.0dip">
+        <View android:id="@id/buttons_spacer_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25" />
+        <Button android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/black" android:layout_gravity="center" android:id="@id/backwardbutton" android:background="@drawable/toolbar_button_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/backward" android:singleLine="true" android:layout_weight="1.0" />
+        <Button android:id="@id/dummybutton" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.5" />
+        <Button android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/black" android:layout_gravity="center" android:id="@id/forwardbutton" android:background="@drawable/list_download_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="@string/forward" android:layout_weight="1.0" />
+        <View android:id="@id/buttons_spacer_right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25" />
+    </LinearLayout>
+</LinearLayout>

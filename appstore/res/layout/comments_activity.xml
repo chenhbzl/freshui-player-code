@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:background="@drawable/news_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@android:id/list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="5.0dip" android:listSelector="@drawable/list_selector" android:drawSelectorOnTop="false" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:layout_weight="1.0" android:layout_above="@id/info_buttons_bar" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/info_buttons_bar" android:background="@drawable/list_header_bar2" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <View android:id="@id/buttons_spacer_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" />
+        <Button android:id="@id/btn_add_comment" android:visibility="gone" android:text="@string/btn_add_comment" style="@style/InfoBarPrimaryButton" />
+        <Button android:id="@id/btn_remove_comment" android:visibility="gone" android:text="@string/btn_remove_comment" style="@style/InfoBarPrimaryButton" />
+        <Button android:id="@id/dummybutton" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.4" />
+        <Button android:id="@id/btn_report_error" android:text="@string/btn_report_error" style="@style/InfoBarSecondaryButton" />
+        <View android:id="@id/buttons_spacer_right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/list_empty" android:background="@drawable/list_view_bkg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@drawable/black" android:gravity="center" android:id="@id/list_empty_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/empty" />
+    </FrameLayout>
+    <include android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/fullscreen_loading_indicator" />
+</RelativeLayout>

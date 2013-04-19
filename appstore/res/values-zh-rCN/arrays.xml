@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="rating_text">
+        <item>很差</item>
+        <item>稍差</item>
+        <item>一般</item>
+        <item>很好</item>
+        <item>极好</item>
+    </string-array>
+</resources>

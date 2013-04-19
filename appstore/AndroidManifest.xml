@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest android:versionCode="20110411" android:versionName="0.8.411" package="com.yingyonghui.market"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@drawable/icon">
+        <activity android:label="@string/app_name" android:name=".SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name=".AssetBrowser" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="SettingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/DialogAboutTheme" android:label="@string/app_name" android:name="AboutDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="AccountDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/DialogTheme" android:label="@string/app_name" android:name="FeedbackDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/search_query_results" android:name=".SearchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/search_query_results" android:name=".SearchAssetListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="market.iworks.com" android:path="/search" />
+                <data android:scheme="market" android:host="search" android:path="" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/DialogTheme" android:name=".ExitDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/TrafficWarningTheme" android:name="TrafficWarningDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/NotMarketWarningTheme" android:name="NotMarketWarningDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TabbedAppBrowser" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".TabbedTopAppBrowser" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".TabbedTopCategoriesBrowser" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".CommonAppListActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".FilteredAppListActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".FilteredCategoryListActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".AssetInfoActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".AssetPermissionsSubActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".CommentsActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".AddCommentActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ReplyCommentActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ReportErrorActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="TabbedAssetBrowser" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="UpdateAppListActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/WarningTheme" android:name="WarningActivity" />
+        <activity android:name="AssetInfoDetailActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="SearchPageActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".PreinstallListActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="NewsContentActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="NewsListActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".install.UninstallerActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".install.UninstallAppProgress" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".install.InstallAppProgress" android:configChanges="keyboardHidden|orientation" />
+        <provider android:name=".provider.MarketProvider" android:authorities="com.yingyonghui.provider.Market" />
+        <receiver android:name=".provider.MarketAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/market_appwidget_info" />
+        </receiver>
+        <meta-data android:name="UMENG_APPKEY" android:value="4c40052f1d41c87895005112" />
+        <meta-data android:name="UMENG_CHANNEL" android:value="web" />
+        <service android:name=".online.UpdateService" android:exported="true" />
+        <receiver android:name=".provider.BootUpReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" />
+    <uses-sdk android:minSdkVersion="3" />
+</manifest>

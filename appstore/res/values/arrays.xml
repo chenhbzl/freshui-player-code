@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <array name="entries_list_app_limit">
+        <item>2M</item>
+        <item>5M</item>
+        <item>10M</item>
+        <item>@string/no_limit</item>
+    </array>
+    <string-array name="entriesvalue_list_app_limit">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>1000</item>
+    </string-array>
+    <string-array name="rating_text">
+        <item>Poor</item>
+        <item>Below average</item>
+        <item>Average</item>
+        <item>Above average</item>
+        <item>Excellent!</item>
+    </string-array>
+</resources>

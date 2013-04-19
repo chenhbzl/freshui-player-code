@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+    <!-- media center 主要项的配置      -->
+    <!-- 这部分要求在所有版本中保持一致，否则无法做到升级 -->
+    <!-- 如果要改此接口，需要固件升级，升级后可能不支持老固件了 -->
+    <!-- 这部分优先解析，解析完成后，发现media center有更新，则要停止其他的更新，先更新media center后，再重新更新其他部分 -->
+    <media-center package="com.actions.MediaCenter"
+                  path="upgrade/MediaCenter.apk">
+        <version code="1" name="1.0.1"/>
+        <description> 
+                "media Center 版本1.0.1
+                    支持xxx的下载更新，速度更快..."
+        </description>
+    </media-center>
+    
+    <!-- 这是apk列表的更新，不需要每次更新都一样，如果有新的应用可供下载，在此处添加一个即可 -->
+    <application-list>
+        <application package="com.actions.MoviePlayer"
+                     path="upgrade/MoviePlayer.apk">
+            <version code=1 name="1.0.1"/>
+            <target-platform name="froyo"/>
+            <description> 
+                "应用的描述"
+            </description>
+        </application>
+        
+        <application package="com.actions.StreamingPlayer"
+                     path="upgrade/Streaming.apk">
+            <version code=1 name="1.0.1"/>
+            <target-platform name="froyo"/>
+            <description> 
+                "应用的描述"
+            </description>
+        </application>
+    <application-list>
+        
+    <!-- daemon library 的配置文件。daemon程序只要so的打包即可  -->
+    <daemon-libraries version-code=1
+         version-name="1.0.1"
+         target-platform="froyo"
+         path="upgrad/daemon.zip">
+    <daemon-libraries>    
+</manifest>
